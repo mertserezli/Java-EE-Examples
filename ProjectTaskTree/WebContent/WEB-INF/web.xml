@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ProjectTaskTree</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <display-name>project</display-name>
+    <servlet-name>project</servlet-name>
+    <jsp-file>/project.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <display-name>taskTree</display-name>
+    <servlet-name>taskTree</servlet-name>
+    <jsp-file>/taskTree.jsp</jsp-file>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>ProjectServlet</display-name>
+    <servlet-name>ProjectServlet</servlet-name>
+    <servlet-class>com.projecttasktree.ProjectServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>TasksServlet</display-name>
+    <servlet-name>TasksServlet</servlet-name>
+    <servlet-class>com.projecttasktree.TasksServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProjectServlet</servlet-name>
+    <url-pattern>/ProjectServlet/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TasksServlet</servlet-name>
+    <url-pattern>/ProjectServlet/TasksServlet/*</url-pattern>
+  </servlet-mapping>
+</web-app>
