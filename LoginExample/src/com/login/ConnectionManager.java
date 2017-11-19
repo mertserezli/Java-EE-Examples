@@ -23,7 +23,7 @@ public class ConnectionManager {
 
 		}
 		if (conn == null)
-			System.out.println("hata conn null olmus");
+			System.out.println("error can't connect to database");
 		return conn;
 	}
 }

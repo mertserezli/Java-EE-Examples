@@ -1,0 +1,19 @@
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/Index")
+public class Index extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String parameter1 = request.getParameter("param1");
+		String parameter2 = request.getParameter("param2");
+		response.getWriter().append(parameter1).append(" ").append(parameter2);
+	}
+
+}

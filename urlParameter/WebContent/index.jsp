@@ -6,8 +6,6 @@
 		<title>Projects</title>
 	</head>
 	<body>
-		<h1>Project-X</h1>
-		<a href="ProjectServlet/1">See project</a>
-		<hr>
+		<a href="Index?param1=value1&param2=value2">Go to servlet</a>
 	</body>
 </html>

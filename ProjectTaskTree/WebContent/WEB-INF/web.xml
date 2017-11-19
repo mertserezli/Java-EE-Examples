@@ -20,6 +20,11 @@
     <jsp-file>/taskTree.jsp</jsp-file>
   </servlet>
   <servlet>
+    <display-name>tree</display-name>
+    <servlet-name>tree</servlet-name>
+    <jsp-file>/tree.css</jsp-file>
+  </servlet>
+  <servlet>
     <description></description>
     <display-name>ProjectServlet</display-name>
     <servlet-name>ProjectServlet</servlet-name>
